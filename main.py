@@ -42,7 +42,7 @@ def val_dump():
 def see_view():
     # initiate connection to local db
     if not os.path.isfile("dronefield.db"):
-	return "Database does not exist"
+        return "Database does not exist"
     conn = sqlite3.connect("dronefield.db")
     cursor = conn.cursor()
 
